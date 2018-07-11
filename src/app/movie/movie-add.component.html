@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Movie</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input [(ngModel)]="movie.title" placeholder="Title" name="title" class="form-control" id="title">
+    </div>
+
+    <div class="form-group">
+      <label for="genre">Genre:</label>
+      <input [(ngModel)]="movie.genre" placeholder="Genre" name="genre" class="form-control" id="genre">
+    </div>
+
+    <button class="btn btn-success" (click)="createMovie()">Create</button>
+  </form>
+</div>
